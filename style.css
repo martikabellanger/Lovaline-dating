@@ -41,8 +41,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: #fdf1e8;
+  text-align: center;
 }
 
 .right-column h1 {
