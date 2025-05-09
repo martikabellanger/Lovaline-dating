@@ -75,3 +75,29 @@ header {
 .btn:hover {
   background-color: #a02119;
 }
+
+
+/* === Responsive pour mobile (moins de 768px) === */
+@media (max-width: 767px) {
+  .content {
+    flex-direction: column; /* empile les colonnes */
+    height: auto; /* on ne fixe plus la hauteur */
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-column {
+    height: 300px; /* hauteur fixe pour l'image sur mobile */
+  }
+
+  .right-column {
+    padding: 30px 20px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
