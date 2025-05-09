@@ -87,6 +87,7 @@ header {
   .content {
     flex-direction: column; /* empile les colonnes */
     height: auto; /* on ne fixe plus la hauteur */
+    width: 100%;
   }
 
   .left-column,
