@@ -103,6 +103,7 @@ header {
     padding: 30px 20px;
     align-items: center;
     text-align: center;
+    justify-content: center;
   }
 }
 
