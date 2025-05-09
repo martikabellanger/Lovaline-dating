@@ -24,7 +24,7 @@ header {
 
 /* Left column */
 .left-column {
-  flex: 1;
+  width: 50%;
   overflow: hidden;
 }
 
@@ -36,7 +36,7 @@ header {
 
 /* Right column */
 .right-column {
-  flex: 1;
+  width: 50%;
   padding: 40px;
   display: flex;
   flex-direction: column;
