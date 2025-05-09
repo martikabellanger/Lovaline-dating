@@ -96,14 +96,17 @@ header {
   }
 
   .left-column {
-    height: 300px; /* hauteur fixe pour l'image sur mobile */
+    height: 400px; /* hauteur fixe pour l'image sur mobile */
   }
 
   .right-column {
+    display: flex;
+    flex-direction: column;
     padding: 30px 20px;
     align-items: center;
     text-align: center;
     justify-content: center;
+    box-sizing: border-box;
   }
 }
 
