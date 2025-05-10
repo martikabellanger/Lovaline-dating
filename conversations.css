@@ -54,8 +54,8 @@ body {
 }
 
 .conversation-zone img {
-  max-width: 100%;
+  max-width: 100vw;
   height: auto;
   display: block;
-  border-radius: 10px;
+  border-radius: 0px;
 }
