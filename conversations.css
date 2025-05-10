@@ -61,12 +61,12 @@ body {
 }
 
 .message-invite {
-  padding-top: 200px; /* hauteur du bandeau */
+  padding-top: 250px; /* hauteur du bandeau */
   box-sizing: border-box;
 }
 
 .message-invite img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 0px;
 }
