@@ -28,10 +28,6 @@ body {
   cursor: pointer;
 }
 
-#content {
-  margin-top: 10px; /* espace sous le bandeau sticky */
-  padding: 20px;
-}
 
 .message-invite {
   display: flex;
@@ -50,7 +46,7 @@ body {
 .conversation-zone {
   display: flex;
   justify-content: center;
-  margin-top: 0px;
+  padding-top: 90px;
 }
 
 .conversation-zone img {
