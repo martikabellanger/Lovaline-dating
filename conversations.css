@@ -4,6 +4,10 @@ body {
   font-family: 'Overlock', sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 .photo-bar {
   background-color: #f5d1b7;
   display: flex;
