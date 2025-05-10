@@ -29,7 +29,7 @@ body {
 }
 
 #content {
-  margin-top: 80px; /* espace sous le bandeau sticky */
+  margin-top: 10px; /* espace sous le bandeau sticky */
   padding: 20px;
 }
 
@@ -50,7 +50,7 @@ body {
 .conversation-zone {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .conversation-zone img {
