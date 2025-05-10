@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background-color: #fdf1e8;
+  font-family: 'Overlock', sans-serif;
+}
+
+.photo-bar {
+  background-color: #f5d1b7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.photo-bar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.message-invite {
+  height: calc(100vh - 80px); /* Ajuster si header présent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.message-invite p {
+  font-size: 20px;
+  color: #80170f;
+}
