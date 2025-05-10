@@ -28,14 +28,14 @@
  <script>
   const images = document.querySelectorAll('.photo-bar img');
   const convImg = document.getElementById('conversation-image');
-  const inviteMessage = document.querySelector('.message-invite');
+  const inviteMessage = document.querySelector('.message-invite p');
 
   images.forEach(img => {
     img.addEventListener('click', () => {
       const convSrc = img.getAttribute('data-conv');
       convImg.src = convSrc;
       convImg.style.display = 'block';
-      inviteMessage.classList.add('hidden');
+      messageText.style.display = 'none';
     });
   });
 </script>
