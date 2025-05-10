@@ -60,9 +60,8 @@ body {
   margin-bottom: 20px;
 }
 
-.message-invite {
-  padding-top: 250px; /* hauteur du bandeau */
-  box-sizing: border-box;
+.main-content {
+  padding-top: 200px; /* Hauteur du bandeau photo-bar */
 }
 
 .message-invite img {
