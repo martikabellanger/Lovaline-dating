@@ -14,8 +14,10 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  flex-wrap: nowrap;
   overflow-x: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .photo-bar img {
@@ -26,46 +28,34 @@ body {
   cursor: pointer;
 }
 
-.photo-bar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+#content {
+  margin-top: 80px; /* espace sous le bandeau sticky */
+  padding: 20px;
+}
+
+.message-invite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #80170f;
+  font-size: 20px;
+  min-height: 200px;
+}
+
+.message-invite p {
+  margin-bottom: 20px;
 }
 
 .conversation-zone {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  margin-top: 20px;
 }
 
 .conversation-zone img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.message-invite {
-  height: calc(100vh - 80px); /* Ajuster si header présent */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-
-.message-invite p {
-  font-size: 20px;
-  color: #80170f;
-  margin-bottom: 20px;
-}
-
-.main-content {
-  padding-top: 200px; /* Hauteur du bandeau photo-bar */
-}
-
-.message-invite img {
   max-width: 100%;
   height: auto;
-  border-radius: 0px;
+  display: block;
+  border-radius: 10px;
 }
