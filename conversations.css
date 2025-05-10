@@ -55,3 +55,19 @@ body {
   display: block;
   border-radius: 0px;
 }
+
+
+/* Conteneur centralisé */
+.wrapper {
+  max-width: 500px; /* largeur mobile */
+  margin: 0 auto;
+  background-color: #fdf1e8; /* beige */
+  min-height: 100vh;
+}
+
+/* Fond rouge sur les grands écrans */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #80170f; /* rouge */
+  }
+}
