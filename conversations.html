@@ -7,19 +7,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="conversations.css">
 </head>
+
+  <script>
+  const images = document.querySelectorAll('.photo-bar img');
+  const convImg = document.getElementById('conversation-image');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      const convSrc = img.getAttribute('data-conv');
+      convImg.src = convSrc;
+      convImg.style.display = 'block';
+    });
+  });
+</script>
+
+  
 <body>
   <header>
       <img src="logo-lovaline.png" alt="Lovaline Dating" class="logo">
   </header>
 
   <div class="photo-bar">
-    <img src="photo1.png" alt="Contact 1">
-    <img src="photo2.png" alt="Contact 2">
-    <img src="photo3.png" alt="Contact 3">
-    <img src="photo4.png" alt="Contact 4">
-    <img src="photo5.png" alt="Contact 5">
-    <img src="photo6.png" alt="Contact 6">
+    <img src="photo1.png" alt="Contact 1" data-conv="conv1.jpg">
+    <img src="photo2.png" alt="Contact 2" data-conv="conv2.jpg">
+    <img src="photo3.png" alt="Contact 3" data-conv="conv3.jpg">
+    <img src="photo4.png" alt="Contact 4" data-conv="conv4.jpg">
+    <img src="photo5.png" alt="Contact 5" data-conv="conv5.jpg">
+    <img src="photo6.png" alt="Contact 6" data-conv="conv6.jpg">
   </div>
+
+  <div class="conversation-zone">
+  <img id="conversation-image" src="" alt="" style="display: none;">
+</div>
 
   <div class="message-invite">
     <p>Sélectionnez un contact pour afficher la discussion.</p>
