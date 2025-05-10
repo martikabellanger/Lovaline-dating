@@ -20,24 +20,29 @@
   </div>
 
 
-  <div class="main-content">
-  <div class="message-invite">
+  <div id="content">
+  <div class="message-invite" id="message-invite">
     <p>Sélectionnez un contact pour afficher la discussion.</p>
+  </div>
+
+  <div class="conversation-zone">
     <img id="conversation-image" src="" alt="" style="display: none;">
   </div>
   </div>
 
- <script>
-  const images = document.querySelectorAll('.photo-bar img');
-  const convImg = document.getElementById('conversation-image');
-  const inviteMessage = document.querySelector('.message-invite p');
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll('.photo-bar img');
+    const convImg = document.getElementById('conversation-image');
+    const messageInvite = document.getElementById('message-invite');
 
-  images.forEach(img => {
-    img.addEventListener('click', () => {
-      const convSrc = img.getAttribute('data-conv');
-      convImg.src = convSrc;
-      convImg.style.display = 'block';
-      messageText.style.display = 'none';
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        const convSrc = img.getAttribute('data-conv');
+        convImg.src = convSrc;
+        convImg.style.display = 'block';
+        messageInvite.style.display = 'none'; // Cache le message
+      });
     });
   });
 </script>
