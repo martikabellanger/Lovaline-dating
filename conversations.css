@@ -47,6 +47,7 @@ body {
 .message-invite {
   height: calc(100vh - 80px); /* Ajuster si header présent */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -56,4 +57,11 @@ body {
 .message-invite p {
   font-size: 20px;
   color: #80170f;
+  margin-bottom: 20px;
+}
+
+.message-invite img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
 }
