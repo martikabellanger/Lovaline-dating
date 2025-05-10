@@ -22,6 +22,24 @@ body {
   cursor: pointer;
 }
 
+.photo-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.conversation-zone {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.conversation-zone img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
 .message-invite {
   height: calc(100vh - 80px); /* Ajuster si header présent */
   display: flex;
