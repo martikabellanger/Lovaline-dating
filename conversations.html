@@ -7,20 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="conversations.css">
 </head>
-
-  <script>
-  const images = document.querySelectorAll('.photo-bar img');
-  const convImg = document.getElementById('conversation-image');
-
-  images.forEach(img => {
-    img.addEventListener('click', () => {
-      const convSrc = img.getAttribute('data-conv');
-      convImg.src = convSrc;
-      convImg.style.display = 'block';
-    });
-  });
-</script>
-
   
 <body>
 
@@ -40,5 +26,19 @@
   <div class="message-invite">
     <p>Sélectionnez un contact pour afficher la discussion.</p>
   </div>
+
+ <script>
+  const images = document.querySelectorAll('.photo-bar img');
+  const convImg = document.getElementById('conversation-image');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      const convSrc = img.getAttribute('data-conv');
+      convImg.src = convSrc;
+      convImg.style.display = 'block';
+    });
+  });
+</script>
+  
 </body>
 </html>
